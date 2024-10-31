@@ -23,6 +23,7 @@ BuildRequires: libnghttp2-devel
 BuildRequires: make
 BuildRequires: nghttp3-0z-devel
 BuildRequires: ngtcp2-0z-devel
+BuildRequires: perl-interpreter
 BuildRequires: zlib-devel
 
 Requires: aws-lc-0z
