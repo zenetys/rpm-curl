@@ -8,7 +8,7 @@
 %global source_date_epoch_from_changelog 0
 
 Name: curl0z
-Version: 8.10.1
+Version: 8.11.0
 Release: 1%{?dist}.zenetys
 Summary: curl command line tool and library
 License: MIT
