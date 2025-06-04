@@ -8,7 +8,7 @@
 %global source_date_epoch_from_changelog 0
 
 Name: curl0z
-Version: 8.13.0
+Version: 8.14.0
 Release: 1%{?dist}.zenetys
 Summary: curl command line tool and library
 License: MIT
@@ -108,8 +108,10 @@ echo '%%%(echo %{name} |tr '-' '_')_prefix %{_prefix}' \
 %license COPYING
 
 %{_bindir}/curl
+%{_bindir}/wcurl
 %{_libdir}/libcurl.so.*
 %{_mandir}/man1/curl.1*
+%{_mandir}/man1/wcurl.1*
 
 %package devel
 Summary: curl development files from package %{name}
