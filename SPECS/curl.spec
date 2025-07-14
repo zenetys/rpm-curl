@@ -1,4 +1,4 @@
-# Supported targets: el8, el9
+# Supported targets: el8, el9, el10
 
 %define _prefix /opt/%{name}
 %define _docdir_fmt curl
@@ -6,6 +6,10 @@
 %{!?make_verbose: %define make_verbose 0}
 
 %global source_date_epoch_from_changelog 0
+
+# el10 adds /usr/lib/rpm/check-rpaths which won't pass because we use
+# non-standard rpaths for aws-lc libraries, which is on purpose
+%global __brp_check_rpaths %{nil}
 
 Name: curl0z
 Version: 8.14.1

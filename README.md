@@ -1,6 +1,6 @@
 | <nobr>Package name</nobr> | <nobr>Supported targets</nobr> |
 | :--- | :--- |
-| curl0z | <nobr>el8, el9</nobr> |
+| curl0z | <nobr>el8, el9, el10</nobr> |
 <br/>
 
 This package depends on shared libraries provided by:
