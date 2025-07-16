@@ -8,7 +8,8 @@
 %global source_date_epoch_from_changelog 0
 
 # el10 adds /usr/lib/rpm/check-rpaths which won't pass because we use
-# non-standard rpaths for aws-lc libraries, which is on purpose
+# non-standard rpaths for aws-lc, ngtcp2 and nghttp3 libraries, which
+# is on purpose
 %global __brp_check_rpaths %{nil}
 
 Name: curl0z
