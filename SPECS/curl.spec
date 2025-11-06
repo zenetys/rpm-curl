@@ -13,7 +13,7 @@
 %global __brp_check_rpaths %{nil}
 
 Name: curl0z
-Version: 8.16.0
+Version: 8.17.0
 Release: 1%{?dist}.zenetys
 Summary: curl command line tool and library
 License: MIT
