@@ -13,7 +13,7 @@
 %global __brp_check_rpaths %{nil}
 
 Name: curl0z
-Version: 8.17.0
+Version: 8.18.0
 Release: 1%{?dist}.zenetys
 Summary: curl command line tool and library
 License: MIT
@@ -106,9 +106,9 @@ echo '%%%(echo %{name} |tr '-' '_')_prefix %{_prefix}' \
 %doc README
 %doc RELEASE-NOTES
 %doc docs/BUGS.md
-%doc docs/FAQ
+%doc docs/FAQ.md
 %doc docs/FEATURES.md
-%doc docs/TODO
+%doc docs/TODO.md
 %doc docs/TheArtOfHttpScripting.md
 %license COPYING
 
