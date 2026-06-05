@@ -14,14 +14,14 @@
 
 Name: curl0z
 Version: 8.20.0
-Release: 1%{?dist}.zenetys
+Release: 2%{?dist}.zenetys
 Summary: curl command line tool and library
 License: MIT
 URL: https://curl.se
 
 Source0: https://curl.haxx.se/download/curl-%{version}.tar.xz
 
-BuildRequires: aws-lc-0z-devel
+BuildRequires: aws-lc-4z-devel
 BuildRequires: gcc
 BuildRequires: krb5-devel
 BuildRequires: libnghttp2-devel
@@ -31,7 +31,7 @@ BuildRequires: ngtcp2-0z-devel
 BuildRequires: perl-interpreter
 BuildRequires: zlib-devel
 
-Requires: aws-lc-0z
+Requires: aws-lc-4z
 Requires: krb5-libs
 Requires: libnghttp2
 Requires: nghttp3-0z
@@ -46,7 +46,7 @@ using URL syntax.
 
 %build
 libs=(
-    '%{aws_lc_0z_prefix}/%{_lib}'
+    '%{aws_lc_4z_prefix}/%{_lib}'
     '%{ngtcp2_0z_prefix}/%{_lib}'
     '%{nghttp3_0z_prefix}/%{_lib}'
 )
@@ -85,7 +85,7 @@ ldflags=-Wl,-rpath,%{_libdir}:$(IFS=:; echo "${libs[*]}")
     --with-nghttp2 \
     --with-nghttp3=%{nghttp3_0z_prefix} \
     --with-ngtcp2=%{ngtcp2_0z_prefix} \
-    --with-openssl=%{aws_lc_0z_prefix} \
+    --with-openssl=%{aws_lc_4z_prefix} \
     --with-ssl \
     --without-zstd \
     PKG_CONFIG_PATH="$pkg_config_path" \
